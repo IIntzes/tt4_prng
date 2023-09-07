@@ -15,16 +15,12 @@ module tt_um_top #( parameter MAX_COUNT = 24'd10_000_000 ) (
     wire reset = ! rst_n;
     wire EN = ena;
     wire [6:0] HEX0;
-    wire [6:0] HEX1;
-    wire clk1hz = 1'b0; //Output indication of the produced 1Hz clock.
-
-    
     assign uo_out[6:0] = HEX0;
+    wire clk1hz = 1'b0; //Output indication of the produced 1Hz clock.
     assign uo_out[7] = clk1hz;
-
     // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
-
+    wire [6:0] HEX1;
     // put bottom 8 bits of second counter out on the bidirectional gpio
     assign uio_out[6:0] = HEX1;
 
