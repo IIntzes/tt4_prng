@@ -15,6 +15,9 @@ source $::env(DESIGN_DIR)/user_config.tcl
 set ::env(RUN_KLAYOUT_XOR) 0
 set ::env(RUN_KLAYOUT_DRC) 0
 
+# TODO: Remove this once https://github.com/The-OpenROAD-Project/OpenLane/issues/1881 has been fixed
+set ::env(RUN_LINTER) 0
+
 # don't put clock buffers on the outputs
 set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
 
