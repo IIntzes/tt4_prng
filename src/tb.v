@@ -1,4 +1,4 @@
-module top_tb;
+module tb;
 
     // Inputs
     reg EN = 0;
