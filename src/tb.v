@@ -5,10 +5,9 @@ module top_tb;
     reg CLK = 0;
 
     // Outputs
-    wire [7:0] OUT;
     wire [6:0] HEX0;
     wire [6:0] HEX1;
-    wire clk1hz;
+
 
     // Instantiate the top module
     top dut (
@@ -16,7 +15,6 @@ module top_tb;
         .CLK(CLK),
         .HEX0(HEX0),
         .HEX1(HEX1),
-        .clk1hz(clk1hz)
     );
 
     // Clock generation
