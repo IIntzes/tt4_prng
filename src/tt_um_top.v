@@ -73,8 +73,8 @@ module tt_um_top #( parameter MAX_COUNT = 24'd10_000_000 ) (
 		
 		mux_16to8 mux(lfsr16_to_mux, lfsr8_to_mux, out_mux);
 
-		assign {OUT[7], OUT[3], OUT[1], OUT[4], OUT[6], OUT[2], OUT[0], OUT[5]} =
-				 {out_mux[7], out_mux[6], out_mux[5], out_mux[4], out_mux[3], out_mux[2], out_mux[1], out_mux[0]};
+		//assign {OUT[7], OUT[3], OUT[1], OUT[4], OUT[6], OUT[2], OUT[0], OUT[5]} =
+		//		 {out_mux[7], out_mux[6], out_mux[5], out_mux[4], out_mux[3], out_mux[2], out_mux[1], out_mux[0]};
 		 
 		//Seven segment circuit
 		DEC_7SEG i1
