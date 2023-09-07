@@ -116,12 +116,12 @@ endmodule
 
 ////////////////////////////////////////LFSR8BIT//////////////////////////////////////////
 module lfsr8 (
-					lfsr_out, clk50mhz, rst, 
+					lfsr_out, clk50Mhz, rst, 
 					);
 	
 	//Input and outputs
 	output reg [7:0] lfsr_out;
-	input reg clk12_5Mhz, rst;
+	input clk12_5Mhz, rst;
 	
 	//LFSR feedback
 	wire feedback;
