@@ -57,11 +57,11 @@ module tt_um_top #( parameter MAX_COUNT = 24'd10_000_000 ) (
 		begin
 			 if (!EN)
 				counter <=0;
-			else if (counter <23'd1_250_000)
+			else if (counter <4'd1_250_000)
 				 begin
 					counter <= counter + 1;
 				 end
-			else if (counter ==23'd1_250_000)
+			else if (counter ==4'd1_250_000)
 				 begin
 					clk12_5Mhz <= !clk12_5Mhz;
 					counter <=0;
@@ -129,7 +129,7 @@ module lfsr8 (
 	always @(posedge clk12_5Mhz, negedge rst)
 	begin
 		if (!rst)
-			lfsr_out = 8'b00000000;
+			lfsr_out = 8'b0;
 		else
 			lfsr_out = {lfsr_out[6:0],feedback};
 	end
