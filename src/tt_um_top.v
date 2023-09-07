@@ -15,14 +15,14 @@ module tt_um_top #( parameter MAX_COUNT = 24'd10_000_000 ) (
     wire reset = ! rst_n;
     wire EN = ena;
     wire [6:0] HEX0;
-    assign uo_out[6:0] = HEX0;
-    //wire clk1hz = 1'b0; //Output indication of the produced 1Hz clock.
-    //assign uo_out[7] = clk1hz;
+    assign uo_out[7:0] = {HEX0, 2'b0};
+
     // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
     wire [6:0] HEX1;
     // put bottom 8 bits of second counter out on the bidirectional gpio
-    assign uio_out[6:0] = HEX1;
+    assign uio_out[7:0] = {HEX1, 2'b0};
+
 
 	wire [15:0] lfsr16_to_mux;  //data
 	wire [7:0] lfsr8_to_mux; 	//control
@@ -93,12 +93,12 @@ endmodule
 
 ////////////////////////////////////////LFSR16BIT//////////////////////////////////////////
 module lfsr16(
-					lfsr_out, clk50mhz, rst, 
+					lfsr_out, clk1hz, rst, 
 					);
 	
 	//Input and outputs
 	output reg [15:0] lfsr_out;
-	input clk50mhz, rst;
+	input clk1hz, rst;
 	
 	//LFSR feedback
 	wire feedback;
@@ -117,7 +117,7 @@ endmodule
 ////////////////////////////////////////LFSR8BIT//////////////////////////////////////////
 module lfsr8 (			
 	output [7:0] lfsr_out, 
-	input clk50Mhz, 
+	input clk12_5Mhz, 
 	input rst 
 );
 	
