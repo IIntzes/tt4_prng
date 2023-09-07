@@ -121,7 +121,7 @@ module lfsr8 (
 	
 	//Input and outputs
 	output reg [7:0] lfsr_out;
-	input clk12_5Mhz, rst;
+	input reg clk12_5Mhz, rst;
 	
 	//LFSR feedback
 	wire feedback;
