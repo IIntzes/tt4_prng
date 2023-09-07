@@ -18,10 +18,10 @@ A pseudorandom number generator (PRNG), also known as a deterministic random bit
 
 # Implementation details
 
--In this project as source of pseudo-randomnes used 2 LFSR's. One that works with 8 bit and one with 16 bit. The circuit don't have input data,  just 1 clock and 1 enable pin. The output will be a 7 segment display, so 14 output pins.  <br />
--The 16 bit LFSR produce the input of a 16-to-8 multiplexer and the 8 bit LFSR produce the selection bits of 16-to-8 multiplexer.  <br />
+-In this project as source of pseudo-randomness we used 2 LFSR's. One that works with 8-bit and one with 16-bit. The circuit don't have input data,  just 1 clock and 1 enable pin. The output will be on two 7 segment displays, so 14 output pins. <br />
+-The 16-bit LFSR produces the input of a 16-to-8 multiplexer and the 8-bit LFSR produces the selection bits of 16-to-8 multiplexer.  <br />
 -The 16-to-8 multiplexer is implemented by 8 2-to-1 multiplexers.  <br />
--The final stage is convert the data readable by 2 7 segment displays.
+-In the final stage the data are converted to BCD format and are shown in two 7-segment displays. The format is hexadecimal.
 
 | # | Input  | Output |
 | ----- | ----- | ------ |
