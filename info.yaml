@@ -21,7 +21,7 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       "International Hellenic University"
+  author:       "International Hellenic University - Department of Information and Electronic Engineering"
   title:        "Pseudo Random Number Generator"
   language:     "Verilog"
   description:  "This project implements a pseudo-random number generator using Verilog. It generates pseudo-random numbers and outputs them to drive two 7-segment displays."
