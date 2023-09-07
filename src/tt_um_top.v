@@ -29,7 +29,7 @@ module tt_um_top #( parameter MAX_COUNT = 24'd10_000_000 ) (
 	wire [7:0] out_mux;
 	
 	reg clk12_5Mhz;
-	
+	wire clk1hz; 
 	
 	integer counter_50M = 0;
   
