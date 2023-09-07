@@ -39,7 +39,7 @@ documentation:
     The 16-to-8 multiplexer is implemented by 8 2-to-1 multiplexers.
     The final stage is convert the data readable by 2 7 segment displays.
 
-    #LFSR16 ------ bit 0  ------> '|' 16-to-8 mux   '|'
+    LFSR16 ------ bit 0  ------> "|" 16-to-8 mux   "|"
     #       ------ bit 1  ------> '|'               '|'----------> output 0
     #       .                     '|'               '|'----------> output 1
     #       .                     '|'               '|'        .
