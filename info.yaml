@@ -56,8 +56,10 @@ documentation:
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      After reset, the counter should increase by one every second with a 10MHz input clock.
-      Experiment by changing the inputs to change the counting speed.
+    To test the pseudo-random number generator, you can follow these steps:
+    - Connect the `clk`, `en`, and `rst_n` signals appropriately.
+    - Connect 2 7 segments display as output.
+    - Apply clock pulses at 50MHz and high logic control signals at `en` to generate and display pseudo-random numbers.
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
