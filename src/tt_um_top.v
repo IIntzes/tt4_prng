@@ -30,8 +30,6 @@ module tt_um_top #( parameter MAX_COUNT = 24'd10_000_000 ) (
 	
 	reg clk12_5Mhz;
 	
-	output wire [6:0] HEX0, HEX1; //Hex indocation of the produced random numbers
-
 	integer counter_50M = 0;
   
 	//Creation of 1Hz clock from 50Mhz input clock.
