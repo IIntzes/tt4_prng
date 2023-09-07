@@ -108,7 +108,7 @@ module lfsr16(
 	always @(posedge clk1hz, negedge rst)
 	begin
 		if (!rst)
-			lfsr_out = 16'b0;
+			lfsr_out = 16'b00000000;
 		else
 			lfsr_out = {lfsr_out[14:0],feedback};
 	end
@@ -129,7 +129,7 @@ module lfsr8 (
 	always @(posedge clk12_5Mhz, negedge rst)
 	begin
 		if (!rst)
-			lfsr_out = 8'b0;
+			lfsr_out = 8'b00000000;
 		else
 			lfsr_out = {lfsr_out[6:0],feedback};
 	end
