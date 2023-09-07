@@ -16,7 +16,7 @@ module tt_um_top #( parameter MAX_COUNT = 24'd10_000_000 ) (
     wire EN = ena;
     wire [6:0] HEX0;
     wire [6:0] HEX1;
-    output reg clk1hz = 1'b0; //Output indication of the produced 1Hz clock.
+    wire clk1hz = 1'b0; //Output indication of the produced 1Hz clock.
 
     
     assign uo_out[6:0] = HEX0;
