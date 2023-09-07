@@ -61,4 +61,4 @@ module tb;
 endmodule
 
 // Instantiate the testbench module
-tb_tt_um_top tb;
+tt_um_top tb;
