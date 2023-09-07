@@ -25,20 +25,20 @@ A pseudorandom number generator (PRNG), also known as a deterministic random bit
 
 | # | Input  | Output |
 | ----- | ----- | ------ |
-| 0     | CLK | SEGMENT0 A |
-| 1     | EN | SEGMENT0 B |
-| 2     | RST_N | SEGMENT0 C |
-| 3     | NONE | SEGMENT0 D |
-| 4     | NONE | SEGMENT0 E |
-| 5     | NONE | SEGMENT0 F |
-| 6     | NONE | SEGMENT0 G |
-| 7     | NONE | SEGMENT1 A |
-| 8     | NONE | SEGMENT1 B |
-| 9     | NONE | SEGMENT1 C |
-| 10    | NONE | SEGMENT1 D |
-| 11    | NONE | SEGMENT1 E |
-| 12    | NONE | SEGMENT1 F |
-| 13    | NONE | SEGMENT1 G |
+| 0     | CLK | Segment0 A |
+| 1     | EN | Segment0 B |
+| 2     | RST_N | Segment0 C |
+| 3     | NONE | Segment0 D |
+| 4     | NONE | Segment0 E |
+| 5     | NONE | Segment0 F |
+| 6     | NONE | Segment0 G |
+| 7     | NONE | Segment1 A |
+| 8     | NONE | Segment1 B |
+| 9     | NONE | Segment1 C |
+| 10    | NONE | Segment1 D |
+| 11    | NONE | Segment1 E |
+| 12    | NONE | Segment1 F |
+| 13    | NONE | Segment1 G |
 
 This is the 2d photo of gds file of chip
 ![2d-photo](https://github.com/Spiros7bit/tt04-submission-test/blob/main/2d.png)
