@@ -155,7 +155,7 @@ module mux_16to8 (
     // Creation of 8 2:1 muxes
 	genvar j;
 	generate
-		for (j = 0; j < 8; j = j + 2) begin : mux_inst_loop
+		for (j = 0; j < 8; j = j + 1) begin : mux_inst_loop
 			  mux_2to1 mux_inst (
 					.a(inputs[j * 2]),
 					.b(inputs[j * 2 + 1]),
