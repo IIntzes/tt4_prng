@@ -14,7 +14,6 @@ module top_tb;
     top dut (
         .EN(EN),
         .CLK(CLK),
-        .OUT(OUT),
         .HEX0(HEX0),
         .HEX1(HEX1),
         .clk1hz(clk1hz)
@@ -43,7 +42,6 @@ module top_tb;
 
     // Display output values during simulation
     always @(posedge CLK) begin
-        $display("OUT = %h", OUT);
         $display("HEX0 = %h", HEX0);
         $display("HEX1 = %h", HEX1);
         $display("clk1hz = %b", clk1hz);
