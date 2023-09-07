@@ -34,7 +34,7 @@ documentation:
     - `rst_n`: Active-low reset signal.
     
     The generator produces 8-bit pseudo-random numbers, which can be used to control two 7-segment displays.
-    As source of pseudo-randomnes used 2 LFSR's. One that works with 8 bit and one with 16 bit. The circuit don't have input data, just 1 clock and 1 enable pin. The output will be a 7 segment display, so 14 output pins.
+    As source of pseudo-randomnes used 2 LFSRs. One that works with 8 bit and one with 16 bit. The circuit dont have input data, just 1 clock and 1 enable pin. The output will be a 7 segment display, so 14 output pins.
     The 16 bit LFSR produce the input of a 16-to-8 multiplexer and the 8 bit LFSR produce the selection bits of 16-to-8 multiplexer.
     The 16-to-8 multiplexer is implemented by 8 2-to-1 multiplexers.
     The final stage is convert the data readable by 2 7 segment displays.
