@@ -59,6 +59,3 @@ module tb;
         $finish;
     end
 endmodule
-
-// Instantiate the testbench module
-tt_um_top tb;
