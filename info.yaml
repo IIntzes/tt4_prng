@@ -44,15 +44,15 @@ documentation:
            .                     |               |----------> output 1
            .                     |               |        .
            .                     |inputs         |        .
-           ------ bit 16 ------> |               |        .
+           ------ bit 15 ------> |               |        .
                                  |               |
-                                 |               |----------> output 8
+                                 |               |----------> output 7
     LFSR8  ------ bit 0  ------> |select         |
            ------ bit 1  ------> |               |
            .                     |               |
            .                     |               |
            .                     |               |
-           ------ bit 8 ------>  |               |
+           ------ bit 7 ------>  |               |
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
