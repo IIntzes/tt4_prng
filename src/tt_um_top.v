@@ -57,11 +57,11 @@ module tt_um_top #( parameter MAX_COUNT = 24'd10_000_000 ) (
 		begin
 			 if (!EN)
 				counter <=0;
-			else if (counter <4'd1_250_000)
+			else if (counter < 21'd1_250_000)
 				 begin
 					counter <= counter + 1;
 				 end
-			else if (counter ==4'd1_250_000)
+			else if (counter == 21'd1_250_000)
 				 begin
 					clk12_5Mhz <= !clk12_5Mhz;
 					counter <=0;
