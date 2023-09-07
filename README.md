@@ -3,7 +3,7 @@
 
 ### International Hellenic University [(IHU)](https://www.iee.ihu.gr/) Thessaloniki, Sindos
 #### Mentor: Ioannis Intzes
-##### Students: Spyrdon Tsioupros, Eumorfia Sidiroglou, Georgios Vellios
+##### Students: Spyridon Tsioupros, Eumorfia Sidiroglou, Georgios Vellios
 
 
 # What is a Pseudo Random Number Generator 
