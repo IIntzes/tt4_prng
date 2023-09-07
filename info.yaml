@@ -39,20 +39,20 @@ documentation:
     The 16-to-8 multiplexer is implemented by 8 2-to-1 multiplexers.
     The final stage is convert the data readable by 2 7 segment displays.
 
-    LFSR16 ------ bit 0  ------> "|" 16-to-8 mux   "|"
-    #       ------ bit 1  ------> '|'               '|'----------> output 0
-    #       .                     '|'               '|'----------> output 1
-    #       .                     '|'               '|'        .
-    #       .                     '|'inputs         '|'        .
-    #       ------ bit 16 ------> '|'               '|'        .
-    #                             '|'               '|'
-    #                             '|'               '|'----------> output 8
-    #LFSR8  ------ bit 0  ------> '|'select         '|'
-    #       ------ bit 1  ------> '|'               '|'
-    #       .                     '|'               '|'
-    #       .                     '|'               '|'
-    #       .                     '|'               '|'
-    #       ------ bit 8 ------>  '|'               '|'
+    LFSR16 ------ bit 0  ------> | 16-to-8 mux   |
+           ------ bit 1  ------> |               |----------> output 0
+           .                     |               |----------> output 1
+           .                     |               |        .
+           .                     |inputs         |        .
+           ------ bit 16 ------> |               |        .
+                                 |               |
+                                 |               |----------> output 8
+    LFSR8  ------ bit 0  ------> |select         |
+           ------ bit 1  ------> |               |
+           .                     |               |
+           .                     |               |
+           .                     |               |
+           ------ bit 8 ------>  |               |
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
